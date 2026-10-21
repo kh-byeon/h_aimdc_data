@@ -1,0 +1,213 @@
+{
+  "run_dir": "/mnt/c/Users/khb/codes/H_RAG_cuad_v3.0_MMR_deviceModeling/sweep_exports/write_stats_k/cross/k5/20260912_214241_mmr-capacitor_centroid-nvm",
+  "jsonl": "retrieval_20260912_214241_mmr-capacitor_centroid-nvm.jsonl",
+  "n_queries": 1000,
+  "config": {
+    "domain": "hotpot",
+    "mmr_lambda": 0.7,
+    "tau_dup": -1.0,
+    "gamma": 0.7,
+    "top_k": 5,
+    "mmr_mode": "capacitor",
+    "centroid_mode": "nvm"
+  },
+  "fields": {
+    "n_pool": {
+      "mean": 2585.081,
+      "median": 2607.0,
+      "p95": 2947.1,
+      "min": 1926.0,
+      "max": 3222.0,
+      "sum": 2585081.0
+    },
+    "n_anchor": {
+      "mean": 3.0,
+      "median": 3.0,
+      "p95": 3.0,
+      "min": 3.0,
+      "max": 3.0,
+      "sum": 3000.0
+    },
+    "mmr_slots": {
+      "mean": 2.0,
+      "median": 2.0,
+      "p95": 2.0,
+      "min": 2.0,
+      "max": 2.0,
+      "sum": 2000.0
+    },
+    "n_stream_avail": {
+      "mean": 2582.081,
+      "median": 2604.0,
+      "p95": 2944.1,
+      "min": 1923.0,
+      "max": 3219.0,
+      "sum": 2582081.0
+    },
+    "buffer_rows_final": {
+      "mean": 5.0,
+      "median": 5.0,
+      "p95": 5.0,
+      "min": 5.0,
+      "max": 5.0,
+      "sum": 5000.0
+    },
+    "n_streamed": {
+      "mean": 2582.086,
+      "median": 2604.0,
+      "p95": 2944.1,
+      "min": 1923.0,
+      "max": 3219.0,
+      "sum": 2582086.0
+    },
+    "n_stream_main": {
+      "mean": 2582.081,
+      "median": 2604.0,
+      "p95": 2944.1,
+      "min": 1923.0,
+      "max": 3219.0,
+      "sum": 2582081.0
+    },
+    "n_stream_fallback": {
+      "mean": 0.005,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 1.0,
+      "sum": 5.0
+    },
+    "n_reject_tau": {
+      "mean": 13.222,
+      "median": 0.0,
+      "p95": 5.0,
+      "min": 0.0,
+      "max": 2773.0,
+      "sum": 13222.0
+    },
+    "n_reject_score": {
+      "mean": 2560.003,
+      "median": 2594.5,
+      "p95": 2935.05,
+      "min": 0.0,
+      "max": 3203.0,
+      "sum": 2560003.0
+    },
+    "n_write_append": {
+      "mean": 2.0,
+      "median": 2.0,
+      "p95": 2.0,
+      "min": 2.0,
+      "max": 2.0,
+      "sum": 2000.0
+    },
+    "n_write_replace": {
+      "mean": 6.861,
+      "median": 6.0,
+      "p95": 17.0,
+      "min": 0.0,
+      "max": 44.0,
+      "sum": 6861.0
+    },
+    "writes_mmr": {
+      "mean": 8.861,
+      "median": 8.0,
+      "p95": 19.0,
+      "min": 2.0,
+      "max": 46.0,
+      "sum": 8861.0
+    },
+    "writes_total": {
+      "mean": 11.861,
+      "median": 11.0,
+      "p95": 22.0,
+      "min": 5.0,
+      "max": 49.0,
+      "sum": 11861.0
+    },
+    "n_readout_main": {
+      "mean": 2582.086,
+      "median": 2604.0,
+      "p95": 2944.1,
+      "min": 1923.0,
+      "max": 3219.0,
+      "sum": 2582086.0
+    },
+    "n_readout_calib": {
+      "mean": 32.0,
+      "median": 32.0,
+      "p95": 32.0,
+      "min": 32.0,
+      "max": 32.0,
+      "sum": 32000.0
+    },
+    "n_readout_total": {
+      "mean": 2614.086,
+      "median": 2636.0,
+      "p95": 2976.1,
+      "min": 1955.0,
+      "max": 3251.0,
+      "sum": 2614086.0
+    }
+  },
+  "derived": {
+    "reject_frac_pooled": 0.9965682785158976,
+    "reject_frac_tau_pooled": 0.005120666004153231,
+    "reject_frac_score_pooled": 0.9914476125117444,
+    "write_reduction_pooled": 291.3989391716511,
+    "write_reduction_incl_anchors_pooled": 217.9484023269539,
+    "reject_frac_per_query": {
+      "mean": 0.9965473125952742,
+      "median": 0.9970915109097798,
+      "p95": 0.9988696487035323,
+      "min": 0.9834862385321101,
+      "max": 0.9993181043300375,
+      "sum": 996.5473125952742
+    },
+    "write_reduction_per_query": {
+      "mean": 404.8613990204027,
+      "median": 343.82142857142856,
+      "p95": 884.683333333333,
+      "min": 60.55555555555556,
+      "max": 1466.5,
+      "sum": 404861.3990204027
+    },
+    "writes_total_per_query": {
+      "mean": 11.861,
+      "median": 11.0,
+      "p95": 22.0,
+      "min": 5.0,
+      "max": 49.0,
+      "sum": 11861.0
+    },
+    "writes_mmr_per_query": {
+      "mean": 8.861,
+      "median": 8.0,
+      "p95": 19.0,
+      "min": 2.0,
+      "max": 46.0,
+      "sum": 8861.0
+    },
+    "readouts_per_query": {
+      "mean": 2614.086,
+      "median": 2636.0,
+      "p95": 2976.1,
+      "min": 1955.0,
+      "max": 3251.0,
+      "sum": 2614086.0
+    },
+    "t_episode_s": {
+      "mean": 0.052281720000000004,
+      "median": 0.05272,
+      "p95": 0.059522,
+      "min": 0.0391,
+      "max": 0.06502000000000001,
+      "sum": 52.28172000000001
+    },
+    "t_end_s": 2e-05,
+    "conservation_ok": true
+  },
+  "placeholders": {
+    "retention_required_s": "TBD  (>= t_episode_s p95 = 5.952e-02 s under the 'hold until the MMR stream ends' definition)",
+    "endurance_required_cycles": "TBD  (= writes_total/query 11.86 x queries per array lifetime, TBD)"
+  }
+}

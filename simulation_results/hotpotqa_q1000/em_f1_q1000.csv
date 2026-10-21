@@ -1,0 +1,4 @@
+source,sweep_idx,top_k,mmr_lambda,tau_dup,gamma,window_size,model_name,quantization,run_id,n_queries,l2_em,mmr_em,em_delta,l2_f1,mmr_f1,f1_delta,l2_recall@2,mmr_recall@2,l2_full@2,mmr_full@2,l2_recall@5,mmr_recall@5,l2_full@5,mmr_full@5,l2_recall@10,mmr_recall@10,l2_full@10,mmr_full@10
+fp16,1,5,0.7,-1.0,0.7,1,,,20260826_223418_mmr-capacitor_centroid-nvm,1000,0.466,0.485,0.01899999999999996,0.5960223358482948,0.6155098039565067,0.01948746810821189,,,,,,,,,,,,
+int8,1,5,0.7,-1.0,0.7,1,,,20260826_223418_mmr-capacitor_centroid-nvm,1000,0.469,0.482,0.013000000000000012,0.5953899625198689,0.6145125534682035,0.019122590948334683,,,,,,,,,,,,
+int4,1,5,0.7,-1.0,0.7,1,,,20260826_223418_mmr-capacitor_centroid-nvm,1000,0.427,0.464,0.03700000000000003,0.5611869904605197,0.5958466398093677,0.03465964934884802,,,,,,,,,,,,

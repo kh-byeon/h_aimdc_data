@@ -1,0 +1,61 @@
+scope,run_id,N,k,d,n_list,m,r,S_measured,writes_rows,calib_calls,mmr_active,object,impl,formula,reads_elem,writes_elem,reads_bytes,writes_bytes,reads_vec,writes_vec
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,centroids,software,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,candidates_pq,software,n_pool * m (bytes),0.0,0.0,20680.648,0.0,0.0,0.0
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,candidate_broadcast,software,N * d,1983042.048,0.0,7932168.192,0.0,2582.086,0.0
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,centroids,in-array,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,candidates_pq,in-array,n_pool * m (bytes),0.0,0.0,20680.648,0.0,0.0,0.0
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,candidate_broadcast,in-array,N * d,1983042.048,0.0,7932168.192,0.0,2582.086,0.0
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,selected_set_S,software,N * |S| * d  reads / writes_rows * d,9915210.239999998,9109.248,39660840.95999999,36436.992,12910.429999999998,11.860999999999999
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,selected_set_S,in-array,N scalars out / writes_rows * d,2582.086,9109.248,10328.344,36436.992,3.362091145833333,11.860999999999999
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,standardization_pass,software,n_c * (n_c - 1) * d,761856.0,0.0,3047424.0,0.0,992.0,0.0
+cross,20260912_214241_mmr-capacitor_centroid-nvm,2582.086,5,768,128,8,1,5.0,11.861,32.0,True,standardization_pass,in-array,n_c scalars out,32.0,0.0,128.0,0.0,0.041666666666666664,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,centroids,software,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,candidates_pq,software,n_pool * m (bytes),0.0,0.0,20680.648,0.0,0.0,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,candidate_broadcast,software,N * d,1979973.8879999998,0.0,7919895.551999999,0.0,2578.091,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,centroids,in-array,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,candidates_pq,in-array,n_pool * m (bytes),0.0,0.0,20680.648,0.0,0.0,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,candidate_broadcast,in-array,N * d,1979973.8879999998,0.0,7919895.551999999,0.0,2578.091,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,selected_set_S,software,N * |S| * d  reads / writes_rows * d,19799738.88,15433.728,79198955.52,61734.912,25780.91,20.096
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,selected_set_S,in-array,N scalars out / writes_rows * d,2578.091,15433.728,10312.364,61734.912,3.3568893229166665,20.096
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,standardization_pass,software,n_c * (n_c - 1) * d,761856.0,0.0,3047424.0,0.0,992.0,0.0
+cross,20260912_215037_mmr-capacitor_centroid-nvm,2578.091,10,768,128,8,1,10.0,20.096,32.0,True,standardization_pass,in-array,n_c scalars out,32.0,0.0,128.0,0.0,0.041666666666666664,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,centroids,software,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,candidates_pq,software,n_pool * m (bytes),0.0,0.0,20680.648,0.0,0.0,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,candidate_broadcast,software,N * d,1974609.4080000003,0.0,7898437.632000001,0.0,2571.106,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,centroids,in-array,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,candidates_pq,in-array,n_pool * m (bytes),0.0,0.0,20680.648,0.0,0.0,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,candidate_broadcast,in-array,N * d,1974609.4080000003,0.0,7898437.632000001,0.0,2571.106,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,selected_set_S,software,N * |S| * d  reads / writes_rows * d,39492188.160000004,29497.344,157968752.64000002,117989.376,51422.12,38.408
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,selected_set_S,in-array,N scalars out / writes_rows * d,2571.106,29497.344,10284.424,117989.376,3.3477942708333335,38.408
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,standardization_pass,software,n_c * (n_c - 1) * d,761856.0,0.0,3047424.0,0.0,992.0,0.0
+cross,20260912_220154_mmr-capacitor_centroid-nvm,2571.106,20,768,128,8,1,20.0,38.408,32.0,True,standardization_pass,in-array,n_c scalars out,32.0,0.0,128.0,0.0,0.041666666666666664,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,centroids,software,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,candidates_pq,software,n_pool * m (bytes),0.0,0.0,79.4,0.0,0.0,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,candidate_broadcast,software,N * d,5326.848,0.0,21307.392,0.0,6.936,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,centroids,in-array,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,candidates_pq,in-array,n_pool * m (bytes),0.0,0.0,79.4,0.0,0.0,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,candidate_broadcast,in-array,N * d,5326.848,0.0,21307.392,0.0,6.936,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,selected_set_S,software,N * |S| * d  reads / writes_rows * d,26517.049344,4226.304,106068.197376,16905.216,34.527408,5.503
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,selected_set_S,in-array,N scalars out / writes_rows * d,6.936,4226.304,27.744,16905.216,0.00903125,5.503
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,standardization_pass,software,n_c * (n_c - 1) * d,67827.395328,0.0,271309.581312,0.0,88.316921,0.0
+distractor,20260912_213905_mmr-capacitor_centroid-nvm,6.936,5,768,128,8,1,4.978,5.503,9.911,True,standardization_pass,in-array,n_c scalars out,9.911,0.0,39.644,0.0,0.012904947916666666,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,centroids,software,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,candidates_pq,software,n_pool * m (bytes),0.0,0.0,79.4,0.0,0.0,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,candidate_broadcast,software,N * d,2397.696,0.0,9590.784,0.0,3.122,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,centroids,in-array,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,candidates_pq,in-array,n_pool * m (bytes),0.0,0.0,79.4,0.0,0.0,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,candidate_broadcast,in-array,N * d,2397.696,0.0,9590.784,0.0,3.122,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,selected_set_S,software,N * |S| * d  reads / writes_rows * d,23797.132800000003,7622.400000000001,95188.53120000001,30489.600000000002,30.985850000000003,9.925
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,selected_set_S,in-array,N scalars out / writes_rows * d,3.122,7622.400000000001,12.488,30489.600000000002,0.0040651041666666665,9.925
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,standardization_pass,software,n_c * (n_c - 1) * d,67827.395328,0.0,271309.581312,0.0,88.316921,0.0
+distractor,20260912_214006_mmr-capacitor_centroid-nvm,3.122,10,768,128,8,1,9.925,9.925,9.911,False,standardization_pass,in-array,n_c scalars out,9.911,0.0,39.644,0.0,0.012904947916666666,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,centroids,software,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,candidates_pq,software,n_pool * m (bytes),0.0,0.0,79.4,0.0,0.0,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,candidate_broadcast,software,N * d,0.0,0.0,0.0,0.0,0.0,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,centroids,in-array,n_list * d,98304,0.0,393216,0.0,128.0,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,candidates_pq,in-array,n_pool * m (bytes),0.0,0.0,79.4,0.0,0.0,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,candidate_broadcast,in-array,N * d,0.0,0.0,0.0,0.0,0.0,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,selected_set_S,software,N * |S| * d  reads / writes_rows * d,0.0,7622.400000000001,0.0,30489.600000000002,0.0,9.925
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,selected_set_S,in-array,N scalars out / writes_rows * d,0.0,7622.400000000001,0.0,30489.600000000002,0.0,9.925
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,standardization_pass,software,n_c * (n_c - 1) * d,67827.395328,0.0,271309.581312,0.0,88.316921,0.0
+distractor,20260912_214121_mmr-capacitor_centroid-nvm,0.0,20,768,128,8,1,9.925,9.925,9.911,False,standardization_pass,in-array,n_c scalars out,9.911,0.0,39.644,0.0,0.012904947916666666,0.0

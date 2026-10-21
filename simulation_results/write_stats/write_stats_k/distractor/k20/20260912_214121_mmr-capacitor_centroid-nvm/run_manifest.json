@@ -1,0 +1,13 @@
+{
+  "run_id": "20260912_214121_mmr-capacitor_centroid-nvm",
+  "mode_tag": "mmr-capacitor_centroid-nvm",
+  "mmr_mode": "capacitor",
+  "centroid_mode": "nvm",
+  "artifact_root": "./sweep_exports/20260912_214121_mmr-capacitor_centroid-nvm",
+  "domain": "hotpot",
+  "num_queries": 1000,
+  "total_combinations": 1,
+  "csv_path": "/mnt/c/Users/khb/codes/H_RAG_cuad_v3.0_MMR_deviceModeling/ws_q1000/sweep_exports/20260912_214121_mmr-capacitor_centroid-nvm/sweep_results_full_grid.csv",
+  "jsonl_path": "./sweep_exports/20260912_214121_mmr-capacitor_centroid-nvm/retrieval_20260912_214121_mmr-capacitor_centroid-nvm.jsonl",
+  "combos_subdir": "combos"
+}

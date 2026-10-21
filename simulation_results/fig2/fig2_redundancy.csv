@@ -1,0 +1,7 @@
+scope,k,n_queries,mmr_active,l2_near_dup_rate,mmr_near_dup_rate,l2_intra_list_diversity,mmr_intra_list_diversity,l2_centroid_breadth,mmr_centroid_breadth,note
+cross,5,1000,True,0.9709,0.7837999999999989,0.2668069660156965,0.43603716388121294,1.763,2.871,corpus aggregate over 1000 queries; cosine>0.7 pair fraction; no per-query distribution is persisted by the pipeline
+cross,10,1000,True,0.9602222222222219,0.8067111111111086,0.2949493307373588,0.408362816789746,2.33,3.908,corpus aggregate over 1000 queries; cosine>0.7 pair fraction; no per-query distribution is persisted by the pipeline
+cross,20,1000,True,0.9369105263157896,0.7826157894736843,0.335431490141114,0.4289769064194674,3.199,6.022,corpus aggregate over 1000 queries; cosine>0.7 pair fraction; no per-query distribution is persisted by the pipeline
+distractor,5,1000,True,0.8332333333333322,0.7911333333333327,0.37316499570384615,0.4051447496533392,2.41,2.629,corpus aggregate over 1000 queries; cosine>0.7 pair fraction; no per-query distribution is persisted by the pipeline
+distractor,10,1000,False,0.6512388888888885,0.6512388888888885,0.4691977624359469,0.4691977624359469,4.589,4.589,corpus aggregate over 1000 queries; cosine>0.7 pair fraction; no per-query distribution is persisted by the pipeline
+distractor,20,1000,False,0.6512388888888885,0.6512388888888885,0.4691977624359469,0.4691977624359469,4.589,4.589,corpus aggregate over 1000 queries; cosine>0.7 pair fraction; no per-query distribution is persisted by the pipeline

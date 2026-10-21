@@ -1,0 +1,84 @@
+{
+  "pairwise_answer_averages": {
+    "answer_a": {
+      "bertscore_precision": 0.5588122852891684,
+      "bertscore_recall": 0.5588122852891684,
+      "bertscore_f1": 0.5588122852891684,
+      "coverage": 0.985,
+      "faithfulness_score": 0.0,
+      "lawyer_suitability_score": 0.0,
+      "retrieval_coverage_top3": 0.915,
+      "retrieval_coverage_top3_graded": 0.8321716199999999,
+      "retrieval_coverage_top5": 0.93,
+      "retrieval_coverage_top5_graded": 0.8574535799999999,
+      "retrieval_coverage_all": 0.96,
+      "retrieval_coverage_all_graded": 0.8762488999999999
+    },
+    "answer_b": {
+      "bertscore_precision": 0.5742098720371723,
+      "bertscore_recall": 0.5742098720371723,
+      "bertscore_f1": 0.5742098720371723,
+      "coverage": 0.995,
+      "faithfulness_score": 0.0,
+      "lawyer_suitability_score": 0.0,
+      "retrieval_coverage_top3": 0.91,
+      "retrieval_coverage_top3_graded": 0.8363066400000001,
+      "retrieval_coverage_top5": 0.925,
+      "retrieval_coverage_top5_graded": 0.85312414,
+      "retrieval_coverage_all": 0.955,
+      "retrieval_coverage_all_graded": 0.8777413
+    }
+  },
+  "pairwise_wins": {
+    "bertscore_f1": {
+      "answer_a": 26,
+      "answer_b": 23,
+      "tie": 1
+    },
+    "coverage": {
+      "answer_a": 1,
+      "answer_b": 2,
+      "tie": 47
+    },
+    "faithfulness_score": {
+      "answer_a": 0,
+      "answer_b": 0,
+      "tie": 0
+    },
+    "lawyer_suitability_score": {
+      "answer_a": 0,
+      "answer_b": 0,
+      "tie": 0
+    },
+    "retrieval_coverage_top3": {
+      "answer_a": 2,
+      "answer_b": 1,
+      "tie": 47
+    },
+    "retrieval_coverage_top3_graded": {
+      "answer_a": 19,
+      "answer_b": 30,
+      "tie": 1
+    },
+    "retrieval_coverage_top5": {
+      "answer_a": 2,
+      "answer_b": 1,
+      "tie": 47
+    },
+    "retrieval_coverage_top5_graded": {
+      "answer_a": 23,
+      "answer_b": 26,
+      "tie": 1
+    },
+    "retrieval_coverage_all": {
+      "answer_a": 1,
+      "answer_b": 0,
+      "tie": 49
+    },
+    "retrieval_coverage_all_graded": {
+      "answer_a": 21,
+      "answer_b": 28,
+      "tie": 1
+    }
+  }
+}

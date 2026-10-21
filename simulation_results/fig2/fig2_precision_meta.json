@@ -1,0 +1,20 @@
+{
+  "full_scale_static_v": 1.3106,
+  "full_scale_dynamic_v": 3.0,
+  "full_scale_dynamic_note": "stored-value window of a 4T2C node, +-1.5 V. NOT the +-3 V SL drive swing. This one number both converts sigma into embedding units and divides the bit conversion, so bits_6sigma does not depend on it; what depends on it is the volt label on sigma.",
+  "noise_unit": "volts on the stored node (sigma_mv column is mV)",
+  "bit_convention": "log2(FS / 6*sigma)",
+  "bits_below_1_reporting": "report as '< 1', never as a negative number",
+  "measured_static_sigma_mv": {
+    "R1C1 (MBL -1.25)": 5.6,
+    "R0C0 (MBL -1.75)": 18.4
+  },
+  "igzo_x_span": 0.1250031217932701,
+  "n_queries": 1000,
+  "nprobe": 32,
+  "topk": 5,
+  "mmr_window": 50,
+  "mmr_lambda": 0.7,
+  "proxy": "tol_probe Carbonell MMR, not the pipeline two-phase MMR",
+  "wall_clock_s": 268.6
+}

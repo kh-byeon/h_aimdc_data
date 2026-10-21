@@ -1,0 +1,9 @@
+tier,scope,k,scenario,reads_per_write,lifetime_queries,basis
+static tier (centroids),-,-,S1_edge_nightly_1e2,100.0,100.0,reads once per query; written once per rebuild
+static tier (centroids),-,-,S2_team_nightly_1e3,1000.0,1000.0,reads once per query; written once per rebuild
+static tier (centroids),-,-,S3_enterprise_nightly_1e4,10000.0,10000.0,reads once per query; written once per rebuild
+static tier (centroids),-,-,S4_enterprise_weekly_1e4,70000.0,70000.0,reads once per query; written once per rebuild
+dynamic tier (selected set S),cross,5,measured n=1000,1101.9669505100749,0.42154961638984906,rd_total * |S| / writes_rows ; |S| / writes_rows
+dynamic tier (selected set S),cross,10,measured n=1000,1298.8112062101911,0.49761146496815284,rd_total * |S| / writes_rows ; |S| / writes_rows
+dynamic tier (selected set S),cross,20,measured n=1000,1355.501978754426,0.5207248489897938,rd_total * |S| / writes_rows ; |S| / writes_rows
+dynamic tier (selected set S),distractor,5,measured n=1000,15.239753952389606,0.9045974922769398,rd_total * |S| / writes_rows ; |S| / writes_rows

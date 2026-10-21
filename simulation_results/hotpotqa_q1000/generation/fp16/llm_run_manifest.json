@@ -1,0 +1,10 @@
+{
+  "run_id": "20260826_223418_mmr-capacitor_centroid-nvm",
+  "source_retrieval_jsonl": "/mnt/c/Users/khb/codes/H_RAG_cuad_v3.0_MMR_deviceModeling/sweep_exports/20260826_223418_mmr-capacitor_centroid-nvm/retrieval_20260826_223418_mmr-capacitor_centroid-nvm.jsonl",
+  "artifact_root_search": "/mnt/c/Users/khb/codes/H_RAG_cuad_v3.0_MMR_deviceModeling/sweep_exports/20260826_223418_mmr-capacitor_centroid-nvm",
+  "llm_output_root": "/mnt/c/Users/khb/codes/H_RAG_cuad_v3.0_MMR_deviceModeling/llm_out_q1000_fp16",
+  "llm_generation_detail_jsonl": "/mnt/c/Users/khb/codes/H_RAG_cuad_v3.0_MMR_deviceModeling/llm_out_q1000_fp16/llm_generation_detail_20260826_223418_mmr-capacitor_centroid-nvm.jsonl",
+  "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "quantization": "fp16",
+  "num_parameter_combos": 1
+}

@@ -1,0 +1,16 @@
+run_id=20260826_223418_mmr-capacitor_centroid-nvm
+generated_by=scripts/run_q1000_distractor.sh
+date=2026-08-26T22:35:09+09:00
+retrieval_scope=distractor
+num_queries=1000
+grid=lambda:0.7 tau_dup:-1.0 gamma:0.7 top_k:5
+nprobe=32 (default; irrelevant under distractor scope -- FeFET runs as dead compute)
+centroid_mode=nvm
+centroid_fit_path=h_aimdc_sim/fefet_ref_fit_smu.json   <-- FeFET path, NOT the igzo_fit_v3 default
+centroid_reduce=linear_sum                             <-- FeFET path, NOT the 'sum' default
+centroid_v_ml=1.4
+mmr_mode=capacitor
+device_fit_path=h_aimdc_sim/igzo_fit.json              (default; IGZO capacitor MMR)
+device_scale_k_path=h_aimdc_sim/igzo_fit.k.json        (default)
+device_v_min=-3.0 device_v_max=3.0
+standardize_mmr_terms=True (default on)

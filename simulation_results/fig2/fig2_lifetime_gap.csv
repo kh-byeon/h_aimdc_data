@@ -1,0 +1,5 @@
+scenario,Q_rebuild,gap_decades_min,gap_decades_max,four_orders_holds
+S1_edge_nightly_1e2,100.0,2.043544620538582,2.375151301570279,False
+S2_team_nightly_1e3,1000.0,3.043544620538582,3.375151301570279,False
+S3_enterprise_nightly_1e4,10000.0,4.043544620538582,4.375151301570279,True
+S4_enterprise_weekly_1e4,70000.0,4.888642660552839,5.220249341584536,True

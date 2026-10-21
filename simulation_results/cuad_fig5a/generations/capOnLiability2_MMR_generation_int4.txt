@@ -1,0 +1,32 @@
+QUERY:
+Highlight the parts (if any) of this contract related to "Cap On Liability" that should be reviewed by a lawyer. Details: Does the contract include a cap on liability upon the breach of a party’s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.
+
+================================================================================
+MMR GENERATED ANSWER (int4)
+================================================================================
+
+**Step 1: Core Finding**
+
+The contract includes a cap on liability upon the breach of a party's obligation. According to Chunk 2, "Licensor's total liability to Licensee under any provision of this Agreement shall be limited to the amount actually paid by Licensee to Licensor for the Licensed Product giving rise to the liability."
+
+**Step 2: Legal Context & Potential Risks**
+
+Other passages in the contract also address liability and potential risks:
+
+* Chunk 1 mentions that the parties to this Agreement acknowledge that each of them relied upon the inclusion of this limitation in consideration of entering into this Agreement. This highlights the importance of understanding the scope of liability.
+* Chunk 9 reiterates the same limitation on liability, emphasizing that the existence of claims or suits against more than one Licensed Product shall not enlarge or extend the limit.
+* Chunk 13.1 (also present in Chunk 9) specifies that Licensor's total liability to Licensee under any provision of this Agreement shall be limited to the amount actually paid by Licensee to Licensor for the Licensed Product giving rise to the liability.
+
+These passages demonstrate the significance of understanding the scope of liability and the limitations on damages.
+
+**Step 3: Executive Summary for Lawyer**
+
+In summary, the contract includes a cap on liability upon the breach of a party's obligation, limiting the amount of damages recoverable to the amount paid by the Licensee. However, specific risks and exceptions may arise from the interactions between different clauses, making it essential to review the entire agreement.
+
+**Step 4: Clause Reference Index**
+
+Here is the mapping of cited Chunks to their corresponding clause or section numbers:
+
+* Chunk 2 → Section 13.1 : Limitation on liability
+* Chunk 9 → Section 13.1 : Reiteration of liability limitation
+* Chunk 13.1 → Section 13.1 : Original mention of liability limitation

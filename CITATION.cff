@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite the paper and this repository."
+title: "h_aimdc_data: device measurements, simulation results and figure scripts for FeFET-IGZO heterogeneous analog in-memory distance computing"
+version: 1.0.0
+date-released: 2026-10-21
+license: CC-BY-4.0
+repository-code: "https://github.com/kh-byeon/h_aimdc_data"
+authors:
+  - family-names: Byun
+    given-names: K. Aiden
+    affiliation: "Seoul National University"
+  - family-names: Choi
+    given-names: Hyeong Seok
+    affiliation: "Seoul National University"
+  - family-names: Joe
+    given-names: Changhoon
+    affiliation: "Seoul National University"
+  - family-names: Han
+    given-names: Dong Hee
+    affiliation: "Seoul National University"
+  - family-names: Park
+    given-names: Min Hyuk
+    affiliation: "Seoul National University"
+  - family-names: Kim
+    given-names: Sangbum
+    affiliation: "Seoul National University"
