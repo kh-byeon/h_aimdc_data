@@ -1,0 +1,21 @@
+{
+ "n_questions": 1000,
+ "l2_identical": 1.0,
+ "device_avg_minus_digital_mmr_std": {
+  "diff": 0.014,
+  "lo": 0.001,
+  "hi": 0.028,
+  "n10": 31,
+  "n01": 17,
+  "p": 0.05946337525377032
+ },
+ "device_avg_minus_digital_mmr_plain": {
+  "diff": -0.006,
+  "lo": -0.032,
+  "hi": 0.02,
+  "n10": 89,
+  "n01": 95,
+  "p": 0.7125307737127085
+ },
+ "identical_to_reference": 1000
+}

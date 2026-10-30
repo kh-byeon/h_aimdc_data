@@ -1,0 +1,27 @@
+{
+ "On-chip": {
+  "U-AIMDC arrays": 102144,
+  "PQ LUT": 786432,
+  "OPQ rotation": 2359296,
+  "Candidate buffer": 2688000,
+  "total": 5935872
+ },
+ "DRAM, int4": {
+  "Generator weights": 6027747328.0,
+  "KV cache": 434765824,
+  "Query encoder": 437945856,
+  "total": 6900459008.0
+ },
+ "DRAM, int8": {
+  "Generator weights": 9086705664,
+  "KV cache": 434765824,
+  "Query encoder": 437945856,
+  "total": 9959417344
+ },
+ "DRAM, fp16": {
+  "Generator weights": 16060522496,
+  "KV cache": 434765824,
+  "Query encoder": 437945856,
+  "total": 16933234176
+ }
+}

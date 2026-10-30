@@ -1,0 +1,13 @@
+{
+  "run_id": "20261029_132713_mmr-software_std_centroid-software",
+  "mode_tag": "mmr-software_std_centroid-software",
+  "mmr_mode": "software_std",
+  "centroid_mode": "software",
+  "artifact_root": "./sweep_exports/20261029_132713_mmr-software_std_centroid-software",
+  "domain": "hotpot",
+  "num_queries": 1000,
+  "total_combinations": 1,
+  "csv_path": "/home/claude/abl/final/ws_q1000/sweep_exports/20261029_132713_mmr-software_std_centroid-software/sweep_results_full_grid.csv",
+  "jsonl_path": "./sweep_exports/20261029_132713_mmr-software_std_centroid-software/retrieval_20261029_132713_mmr-software_std_centroid-software.jsonl",
+  "combos_subdir": "combos"
+}

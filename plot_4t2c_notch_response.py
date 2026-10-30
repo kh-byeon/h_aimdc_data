@@ -14,7 +14,8 @@ because it is a superset of the two CSVs):
   ``4t2c_auto_0903_notch.csv``      = the ``notch`` sheet
 
 The measurement (chip6 / 4t2c_a, 2026-09-03, MBL -1.5 V, BL 0 V, SL differential,
-TIA CH8 with Rf = 1 MOhm, 3 samples per point): for each stored weight w from
+TIA CH8 with Rf = 27 kOhm on the measurement board -- the logger and v1.0.0 of this docstring
+said 1 MOhm -- 3 samples per point): for each stored weight w from
 -1.5 to +1.5 V in 0.1 V steps, the SL differential voltage v is swept around the
 notch and the TIA code recorded, out to where the code has risen ~50 % above the
 notch floor. Each block is fitted with

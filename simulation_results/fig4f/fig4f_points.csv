@@ -1,0 +1,15 @@
+key,label,retention_s,endurance_cycles,retention_mode,endurance_mode,ref,note
+hkmg_fefet,"28 nm HKMG FeFET, 2-bit MLC",1e5,1e4,analog,analog,S1,85 degC
+srcoox,"SrCoO$_x$ TPT-RAM",3e3,1e8,analog,binary,S2,85 degC
+hfo2_ispva,"HfO$_2$ RRAM, multi-level ISPVA",3.2e8,1e3,analog,analog,S3,projected retention
+mlc_pcm,"MLC PCM, 2 bit/cell",6e5,1e6,analog,binary,S4,
+ct_memristor,"charge-trap memristor, 8 states",1e3,1e5,analog,binary,S5,125 degC
+ito_fefet,"ITO FeFET",3.2e8,2e7,binary,binary,S6,extrapolated retention
+mos2_fefet,"MoS$_2$ FeFET (1 $\mu$s write)",3.2e8,1e7,binary,binary,S7,extrapolated retention
+sns2_fefet,"SnS$_2$ FeFET, 16 levels",1e5,1.4e4,analog,analog,S8,100-cycle potentiation-depression test
+igzo_hzo_fefet,"IGZO/HZO FeFET",1e6,1e6,binary,binary,S9,85 degC
+sr_rram,"self-rectifying HfO$_2$ RRAM",1e4,1e4,analog,binary,S10,
+mos2_flash,"MoS$_2$ charge-trap flash",1e5,1e4,analog,binary,S11,
+si_gain_cell,"Si 2T gain cell",2.4e-1,,binary,,S12,endurance not reported
+mos2_2t1c,"MoS$_2$ 2T1C",1e1,,analog,,S13,endurance not reported
+igzo_2t1c,"IGZO 2T1C gain cell",1.3e2,,analog,,S14,endurance not reported

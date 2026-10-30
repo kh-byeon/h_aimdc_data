@@ -1,0 +1,6 @@
+arm=device_var
+scenario=all_0.5x
+seed=2
+num_queries=1000
+query_emb_map=sweep_exports/query_emb_q1000_searchtext.npz
+args=--centroid_mode nvm --centroid_fit_path h_aimdc_sim/fefet_ref_fit_smu.json --centroid_reduce linear_sum --centroid_v_ml 1.4 --mmr_mode capacitor --device_v_min -3.0 --device_v_max 3.0 --noise_config noise_configs/ablation/decap_all_0.5x_s2.json

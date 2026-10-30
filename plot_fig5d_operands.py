@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""Fig. 5d -- memory traffic per query against the selected-set size k.
+"""Fig. 5d -- idealized selected-set operand movement per query against the selected-set size k.
 
-Analytic count of values moved in the diversity comparison alone (Methods,
-"Memory-traffic accounting"):
-    software MMR : N * k * d        (every candidate re-reads all k rows of S)
-    H-AIMDC      : N * (d + 1)      (candidate broadcast in, one scalar out)
+Analytic count of values moved in the diversity comparison alone (Supplementary Note 2.3):
+    re-read baseline : N * k * d    (every candidate re-reads all k rows of S from memory)
+    U-AIMDC          : N * (d + 1)  (candidate broadcast in, one scalar out of the array)
+The panel shows how each count scales with k. It is not a traffic or energy comparison:
+the k rows (15-60 KiB in FP32 for k = 5-20) can stay in a cache or SRAM, and writes,
+conversion and reduction are not counted. No ratio is drawn for that reason.
 N is the mean number of candidates streamed per query on the 1,000-question
 HotpotQA run at the operating point (write_stats, distractor scope, k = 5):
-    H_RAG_cuad_v3.0_MMR_deviceModeling/sweep_exports/write_stats/distractor/
-        20260911_103459_mmr-capacitor_centroid-nvm/write_stats_summary.json
+    simulation_results/write_stats/write_stats_k/distractor/k5/
+        20260912_213905_mmr-capacitor_centroid-nvm/write_stats_summary.json  (n_streamed, mean)
 One N is used for both lines, so the gap is exactly k*d/(d+1) ~ k.
 
-    python plot_fig5d_traffic.py            # writes figures/fig5d_traffic.{png,svg,pdf}
+    python plot_fig5d_operands.py           # writes figures/fig5d_operands.{png,svg,pdf}
+
+Replaces plot_fig5d_traffic.py of v1.0.0, which drew the original panel with 5x/10x/20x ratio
+arrows and the labels "software" and "H-AIMDC".
 """
 from pathlib import Path
 import matplotlib
@@ -40,34 +45,31 @@ ax.grid(True, which="major", axis="y", color="0.85", lw=0.6)
 ax.grid(True, which="major", axis="x", color="0.85", lw=0.6)
 ax.set_axisbelow(True)
 
-# software MMR: step-wise, one level per k
+# re-read baseline: step-wise, one level per k
 for i, (k, v) in enumerate(zip(KS, sw)):
     k_next = KS[i + 1] if i + 1 < len(KS) else 24
     ax.plot([k, k_next], [v, v], color=C_SW, lw=2.2, solid_capstyle="butt", zorder=3)
 ax.plot(KS, sw, "o", color=C_SW, ms=6, mec="white", mew=0.8, zorder=4)
-# H-AIMDC: flat
+# U-AIMDC: flat
 ax.plot([2.5, 24], [hw, hw], color=C_HW, lw=2.2, zorder=3)
 ax.plot(KS, [hw] * 3, "o", color=C_HW, ms=6, mec="white", mew=0.8, zorder=4)
 
-# gap arrows with the ratio
-for k, v in zip(KS, sw):
-    ax.annotate("", xy=(k, v / 1.25), xytext=(k, hw * 1.25),
-                arrowprops=dict(arrowstyle="<->", color=C_ARR, lw=0.9, ls=(0, (3, 2)),
-                                mutation_scale=9), zorder=5)
-    ax.text(k + 0.45, (v * hw) ** 0.5, f"{v / hw:.0f}×", color=C_ARR, fontsize=9.5,
-            fontweight="bold", va="center", ha="left")
+# size of the k selected rows in FP32, so the reader sees they are small
+for i, (k, v) in enumerate(zip(KS, sw)):
+    lab = f"{k * D * 4 / 1024:.0f} KiB" + (" (FP32)" if i == 0 else "")
+    ax.text(k + 0.3, v / 1.3, lab, color=C_SW, fontsize=7.2, ha="left", va="top")
 
-ax.text(23.5, sw[-1] * 2.6, "Software MMR", color=C_SW, fontsize=9.5, fontweight="bold",
+ax.text(23.5, sw[-1] * 2.6, "Re-read baseline", color=C_SW, fontsize=9.5, fontweight="bold",
         ha="right", va="bottom")
-ax.text(23.5, sw[-1] * 1.55, "re-reads all k rows for every candidate", color=C_SW,
+ax.text(23.5, sw[-1] * 1.55, "k rows read for every candidate", color=C_SW,
         fontsize=7.6, ha="right", va="bottom")
-ax.text(23.5, hw / 1.6, "H-AIMDC", color=C_HW, fontsize=9.5, fontweight="bold",
+ax.text(23.5, hw / 1.6, "U-AIMDC", color=C_HW, fontsize=9.5, fontweight="bold",
         ha="right", va="top")
 ax.text(23.5, hw / 2.6, "flat in k: rows stay in the array", color=C_HW, fontsize=7.6,
         ha="right", va="top")
 
 ax.set_xlabel("Selected set size  k", fontsize=10, fontweight="bold")
-ax.set_ylabel("Memory traffic per query (values)", fontsize=10, fontweight="bold")
+ax.set_ylabel("Selected-set operands moved\nper query (values)", fontsize=10, fontweight="bold")
 for lab in ax.get_yticklabels():
     lab.set_fontweight("bold")
 for s in ("top", "right"):
@@ -76,6 +78,6 @@ for s in ("top", "right"):
 out = Path(__file__).resolve().parent / "figures"
 out.mkdir(exist_ok=True)
 for ext in ("png", "svg", "pdf"):
-    fig.savefig(out / f"fig5d_traffic.{ext}", dpi=300, bbox_inches="tight", pad_inches=0.05)
-print("N =", N, "| software:", [round(v) for v in sw], "| H-AIMDC:", round(hw),
+    fig.savefig(out / f"fig5d_operands.{ext}", dpi=300, bbox_inches="tight", pad_inches=0.05)
+print("N =", N, "| re-read baseline:", [round(v) for v in sw], "| U-AIMDC:", round(hw),
       "| ratios:", [round(v / hw, 2) for v in sw])

@@ -1,0 +1,7 @@
+{
+ "frozen_variation": true,
+ "variation_seed": 5,
+ "sigma_alpha": 0.0335,
+ "sigma_log_mu": 0.0607,
+ "sigma_vth": 0.15439
+}
